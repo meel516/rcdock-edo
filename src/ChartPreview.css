@@ -1,0 +1,109 @@
+.container {
+  /* border: 1px solid grey; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.graphSidebar {
+  width: 10%;
+  background-color: #f1f1f1;
+  border-radius: 0px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.icons-container {
+  flex: 1;
+  /* text-align: center; */
+  margin-bottom: 22px;
+  overflow-y: auto;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.icons-container::-webkit-scrollbar {
+  display: none;
+}
+
+.graphSidebar .icon {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.graphSidebar .icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.scroll-button {
+  text-align: center;
+  background-color: grey;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  cursor: pointer;
+  width: 100%;
+  height: 5%;
+}
+.selected {
+  background-color: white;
+}
+.graphSidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.chart-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13%;
+}
+
+.chart-preview {
+  height: 87%;
+  width: 100%;
+}
+.text-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: 100%;
+}
+
+.settings-icon {
+  display: flex;
+  cursor: pointer;
+}
+
+.editable-input {
+  /* width: 100%; */
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.editable-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
